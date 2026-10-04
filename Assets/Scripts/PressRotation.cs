@@ -28,8 +28,10 @@ public class PressRotation : MonoBehaviour
         if (estadisticas == null) return;
         rotationSpeed = estadisticas.velocity;
 
-        // Si el jugador no está tocando la pantalla, apagamos la mira visual
-        if (Input.touchCount == 0)
+        // Si no se está tocando la pantalla NI presionando el clic izquierdo del mouse, apagamos la mira
+        bool hayEntrada = Input.touchCount > 0 || Input.GetMouseButton(0);
+
+        if (!hayEntrada)
         {
             if (miraInstanciada != null) miraInstanciada.gameObject.SetActive(false);
             return;
@@ -40,8 +42,20 @@ public class PressRotation : MonoBehaviour
 
     void GirarHaciaClicYPosicionarMira()
     {
-        // Creamos un rayo desde la posición del touch en la pantalla hacia el mundo 3D
-        Ray ray = mainCamera.ScreenPointToRay(Input.GetTouch(0).position);
+        Vector3 posicionEntrada;
+
+        // Obtiene las coordenadas de la pantalla según el tipo de interacción
+        if (Input.touchCount > 0)
+        {
+            posicionEntrada = Input.GetTouch(0).position;
+        }
+        else
+        {
+            posicionEntrada = Input.mousePosition;
+        }
+
+        // Creamos un rayo desde la posición del puntero/touch en la pantalla hacia el mundo 3D
+        Ray ray = mainCamera.ScreenPointToRay(posicionEntrada);
         RaycastHit hit;
 
         // Lanzamos el rayo al mundo
@@ -53,7 +67,7 @@ public class PressRotation : MonoBehaviour
             if (miraInstanciada != null)
             {
                 miraInstanciada.gameObject.SetActive(true);
-                // Posiciona la mira exactamente donde toca el dedo, sutilmente sobre el suelo (Y = 0.05f) para evitar z-fighting
+                // Posiciona la mira exactamente donde toca el cursor/dedo
                 miraInstanciada.position = new Vector3(targetPosition.x, 0.05f, targetPosition.z);
 
                 // Hace que la mira rote sobre su propio eje sutilmente para darle Juice visual

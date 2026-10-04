@@ -28,8 +28,10 @@ public class DisparadorCorazon : MonoBehaviour
 
     void Update()
     {
-        // Disparo automático continuo al mantener presionado el touch
-        if (Input.touchCount > 0 && Time.timeScale > 0)
+        // Detecta si el jugador está manteniendo presionado el Clic Izquierdo del Mouse O la Pantalla Táctil
+        bool disparando = (Input.GetMouseButton(0) || Input.touchCount > 0) && Time.timeScale > 0;
+
+        if (disparando)
         {
             timerDisparoNormal -= Time.deltaTime;
             if (timerDisparoNormal <= 0f)

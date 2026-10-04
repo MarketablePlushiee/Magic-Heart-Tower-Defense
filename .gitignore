@@ -5,3 +5,8 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]etting[Ss]/
+
+.vs/
+*.csproj
+*.sln
+*.slnx

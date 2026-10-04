@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\ProjectosUnity\\Ivan_Latrille_Evaluacion_VFX\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\projectosunity\\ivan_latrille_evaluacion_vfx\\assets\\scripts\\pressrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pressrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\projectosunity\\ivan_latrille_evaluacion_vfx\\assets\\scripts\\disparadorcorazon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\disparadorcorazon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\projectosunity\\ivan_latrille_evaluacion_vfx\\assets\\scripts\\enemigocraneo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemigocraneo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\projectosunity\\ivan_latrille_evaluacion_vfx\\assets\\scripts\\botonjuice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\botonjuice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\projectosunity\\ivan_latrille_evaluacion_vfx\\assets\\scripts\\disparadorcorazon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\disparadorcorazon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\projectosunity\\ivan_latrille_evaluacion_vfx\\assets\\scripts\\pressrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pressrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "BotonJuice.cs",
               "DocumentMoniker": "D:\\ProjectosUnity\\Ivan_Latrille_Evaluacion_VFX\\Assets\\Scripts\\BotonJuice.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BotonJuice.cs",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Brain.cs",
               "DocumentMoniker": "D:\\ProjectosUnity\\Ivan_Latrille_Evaluacion_VFX\\Assets\\Scripts\\Brain.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Brain.cs",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EnemigoCraneo.cs",
               "DocumentMoniker": "D:\\ProjectosUnity\\Ivan_Latrille_Evaluacion_VFX\\Assets\\Scripts\\EnemigoCraneo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemigoCraneo.cs",
@@ -71,27 +71,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "DisparadorCorazon.cs",
               "DocumentMoniker": "D:\\ProjectosUnity\\Ivan_Latrille_Evaluacion_VFX\\Assets\\Scripts\\DisparadorCorazon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DisparadorCorazon.cs",
               "ToolTip": "D:\\ProjectosUnity\\Ivan_Latrille_Evaluacion_VFX\\Assets\\Scripts\\DisparadorCorazon.cs",
               "RelativeToolTip": "Assets\\Scripts\\DisparadorCorazon.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAqwG8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAUwHEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T05:51:09.723Z"
+              "WhenOpened": "2026-06-24T05:51:09.723Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "PressRotation.cs",
               "DocumentMoniker": "D:\\ProjectosUnity\\Ivan_Latrille_Evaluacion_VFX\\Assets\\Scripts\\PressRotation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PressRotation.cs",
               "ToolTip": "D:\\ProjectosUnity\\Ivan_Latrille_Evaluacion_VFX\\Assets\\Scripts\\PressRotation.cs",
               "RelativeToolTip": "Assets\\Scripts\\PressRotation.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAqwFIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T05:44:37.618Z"
+              "WhenOpened": "2026-06-24T05:44:37.618Z",
+              "EditorCaption": ""
             }
           ]
         }
